@@ -21,8 +21,8 @@ from django.contrib import messages
 
 logger = logging.getLogger(__name__)
 
-# Load environment variables first
-load_dotenv()
+# Load environment variables from .env file in the call directory
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 # Initialize Twilio client with environment variables
 client = Client(
