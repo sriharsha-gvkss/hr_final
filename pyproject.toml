@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hr-management"
+version = "0.1.0"
+description = "HR Management System"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10.13"
+Django = "3.2.24"
+python-dotenv = "0.19.2"
+whitenoise = "6.2.0"
+gunicorn = "20.1.0"
+psycopg2-binary = "2.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
