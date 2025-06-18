@@ -26,8 +26,8 @@ load_dotenv()
 
 # Initialize Twilio client with environment variables
 client = Client(
-    os.getenv('TWILIO_ACCOUNT_SID'),
-    os.getenv('TWILIO_AUTH_TOKEN')
+    os.environ.get('TWILIO_ACCOUNT_SID'),
+    os.environ.get('TWILIO_AUTH_TOKEN')
 )
 
 # Public URL for webhooks - Replace this with your actual public URL
