@@ -1,3 +1,5 @@
+# Python version requirement
+python==3.7.9
 Django==3.2.24
 python-dotenv==0.19.2
 whitenoise==6.2.0
